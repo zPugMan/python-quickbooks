@@ -106,6 +106,7 @@ class SalesItemLineDetail(QuickbooksBaseObject):
         "TaxCodeRef": Ref,
         "PriceLevelRef": Ref,
         "MarkupInfo": MarkupInfo,
+        "ItemAccountRef": Ref,
     }
 
     def __init__(self):
@@ -120,6 +121,7 @@ class SalesItemLineDetail(QuickbooksBaseObject):
         self.ClassRef = None
         self.TaxCodeRef = None
         self.PriceLevelRef = None
+        self.ItemAccountRef = None
 
     def __str__(self):
         return str(self.UnitPrice)
